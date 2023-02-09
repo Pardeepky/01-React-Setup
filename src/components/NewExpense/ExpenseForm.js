@@ -47,8 +47,7 @@ const ExpenseForm = (props) => {
                         placeholder="Enter your amount"
                         value={formData.amount}
                         onChange={handleInputChange}
-                        min="0.01"
-                        set="0.01" />
+                    />
                 </div>
                 <div className="new-expense__control">
                     <label>Date</label>
@@ -63,7 +62,7 @@ const ExpenseForm = (props) => {
                     <button type="submit">AddExpense</button>
                 </div>
             </div>
-            </form>
+        </form>
     )
 }
 

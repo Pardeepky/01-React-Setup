@@ -25,6 +25,7 @@ const ExpenseForm = (props) => {
             amount: '',
             date: '',
         })
+        props.setIsActive(false);
     };
 
     return (
@@ -59,6 +60,7 @@ const ExpenseForm = (props) => {
                         onChange={handleInputChange} />
                 </div>
                 <div className="new-expense__actions">
+                    <button onClick={()=> props.setIsActive(false)}>Cancel</button>
                     <button type="submit">AddExpense</button>
                 </div>
             </div>
